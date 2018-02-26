@@ -3,7 +3,7 @@
 I love pull requests from everyone.
 Contributing is easy:
 
- - You can report bugs and request features using the [issues page](https://github.com/madhead/imagemagick/issues/new).
+ - You can report bugs and request features using the [issues page](https://github.com/madhead/imagemagick/issues).
  - You can easily work on the code if you have a GitHub account ([get one](https://github.com/join)).
 
 Fork the project, then clone the repo:
