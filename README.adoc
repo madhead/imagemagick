@@ -1,3 +1,0 @@
-= madhead/imagemagick
-
-Small https://docker.com[Docker] image for hustle-free image conversions with https://imagemagick.org[ImageMagick].
