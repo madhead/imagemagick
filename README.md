@@ -10,14 +10,15 @@ First, pull the image:
 
 Then, do the simple conversions like:
 
-    docker run --rm -it -v $(pwd):/src -v $(pwd):/out madhead/imagemagick convert /src/image.svg /out/image.png
+    docker run --rm -it -v $(pwd):/src -v $(pwd):/out --user=$(id -u):$(id -g) madhead/imagemagick convert /src/image.svg /out/image.png
 
 or more sophisticated ones:
 
-    docker run --rm -it -v $(pwd):/src -v $(pwd):/out madhead/imagemagick convert -density 300 /src/document.pdf -background white -alpha remove -quality 90 /out/document.png
+    docker run --rm -it -v $(pwd):/src -v $(pwd):/out --user=$(id -u):$(id -g) madhead/imagemagick convert -density 300 /src/document.pdf -background white -alpha remove -quality 90 /out/document.png
 
 Read about the available flags, options and switches in the official [ImageMagick documentation](https://imagemagick.org/script/convert.php).
 [Ubuntu's manpage](http://manpages.ubuntu.com/manpages/precise/en/man1/convert.1.html) is great as well.
+Docker options are described in details [on their site](https://docs.docker.com/engine/reference/run).
 
 ## Contributing
 
