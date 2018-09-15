@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine
 LABEL maintainer="madhead <siarhei.krukau@gmail.com>"
 
-RUN apk add --no-cache --update imagemagick librsvg
+RUN apk add --no-cache imagemagick librsvg inkscape
